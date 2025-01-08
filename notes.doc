@@ -1,0 +1,76 @@
+TRAINING
+
+6/1/2025
+variables:variables are used to store data(any type of data)
+1) static typed and dynamic typed
+
+case sensitive:
+1) start with letters , underscore,$
+2) can't start with numbers
+3) reserved words can't be used
+
+how to declare variables:
+1.variable(var)
+2.let
+3.constant(const)
+
+reassigning var, let, const is accepted
+var a=1
+a=8
+
+redeclaring var is accepted
+var a=0
+var a=9
+
+redeclaring const, let is not accepted
+
+two types of data types
+1. Primitive data type
+2. Non-Primitive data type
+
+to check the data type -typeof
+
+1. Primitive data type: we an store single values
+1, Numbers: Integers, floats
+2, String: Stream of characters enclosed in quotes single'', double"", backtick quotes
+3, Boolean: true or false
+4, Null: empty value or no value
+5, Undefined: declared variable with no value
+
+condition: An expression that evaluates the result(true or false)
+console.log(5>4): true
+
+condition statement: 
+To make the set if instructions execute only when the condition is true
+Block of code(condition Block): set of instructions
+--when this block of code will execute it will execute when the given specific condition is true
+
+identation: {
+    Block of code
+}
+
+if: only one condition is possible
+
+^^Date: 8/1/2025^^
+
+javascript operators
+
+1, Arithmetic operators:  +, -, *, 
+division - /(quoitent)
+modulus  - %(remainder)
+exponential  - **
+ 2,logical operators: &&, ||
+ 3, relational(comparsion) operators: >, <, >=, <=, 
+ ==(compares value), !=, 
+ ===(compares datatype,strict equality), 
+ !==(compare datatype, strict inequality)
+
+ 4, condition operators: ternary operator- ? : 
+
+ window methods:
+ prompt: is used to take input from user and the default data type is string.
+
+
+
+
+

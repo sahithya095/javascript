@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document3</title>
+</head>
+<body><script>
+    //1 program
+//let a=parseInt(prompt("Enter the number"))
+// if(a%3==0 &&a%2==0){
+//     document.write("The number is divisible by 3 and 2")
+// }
+// else{
+//      document.write("The number is  not divisible by 3 and 2")
+// }
+
+//2 program
+// let a=parseInt(prompt("Enter the number"))
+// let b=parseInt(prompt("Enter the number"))
+// let c=parseInt(prompt("Enter the number"))
+// if(a>b&&a>c){
+//     document.write("The largest Number is "+a)
+// }
+// else if(b>c&&b>c){
+//     document.write("The largest Number is "+b)
+// }
+// else if(c>b&&c>a){
+//     document.write("The largest Number is "+c)
+// }
+
+//3 program
+let a=parseInt(prompt("Enter the total number day of working days: "))
+let b=parseInt(prompt("Enter the number of absent days: "))
+let c=a-b
+let ax=(c/a)*100
+let percentage=ax.toFixed(3)
+document.write(`The attendance percentage of student is ${percentage}%.`+'<br>')
+if(percentage<75){
+    document.write("Student is not eligible to write exam")
+}
+else{
+   
+    document.write("Student is  eligible to write exam")
+}
+
+
+
+</script>    
+</body>
+</html>

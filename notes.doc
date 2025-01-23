@@ -72,5 +72,29 @@ exponential  - **
 
 
 
+Date: 23/01/2025
+1, conditioal statements
+2, loops
+3,nested loops
+break and continue
+funtions
+DOM
+events
+mini projects
+major projects
+html,javascript,css, react
+java, spring boot,mysql
+web applications
+front-end
+database,java
+ 
+funtions: A funtion is a resuable block of code. It can be called anywhere in the program.
+--resuable code: using an existing code without writing it ever we need
+you can use the same code with different arguments to get the results
+JS:
+keyword=function
+()
+parameters=values (variables)which are declared inside the () paranthesis while defining a function
 
+arguments: values which are passed through the parameters
 

@@ -55,14 +55,16 @@
     }
     //call greet and pass say goodbye as the callback
     greet('sam')
-    // let mypromise=new Promise(resolve,reject)=>{
-        // let su=true;
-        // if(su){
-        //     resolve("task completed");
-        // };
-        // else{
-        //     reject("task failed")
-        // }
+    let mypromise=new Promise((resolve,reject)=>{
+        let su=true;
+        if(su){
+            resolve("task completed")
+        }
+        else{
+            reject("task failed")
+        }
+    }
+)
     
     
  

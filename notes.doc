@@ -70,6 +70,44 @@ exponential  - **
  window methods:
  prompt: is used to take input from user and the default data type is string.
 
+ Date:20/01/25
+Loops: Block of code several tyms
+1.	For loop
+2.	For in 
+3.	For of
+4.	While
+5.	Do while
+For loop: 
+Syntax: for(initialization; condition ; update—expression){
+//block of code
+}
+
+
+Date: 21/01/25
+For in loop
+Const a = ‘ramya’
+For(let I in a){
+//block of code
+}
+While loop
+We use while loop when we doesn’t know the no of iterations in advance
+Syntax of while loop
+While(condition){
+//block of code
+}
+1.	Cond inside the ()
+2.	{}
+3.	False 
+Do while syntax:
+Do{
+//block of code
+}while(condition)
+Break statement: if it matches with the condition it will stop executing.
+Continue statement: if it matches with the condition it will skip that step and execute the remaining program
+
+Nested loops: A loop inside the another loop
+The inner loop will execute one time for each iteration of outer loop
+An inner loop within the repeating block of outer loop
 
 
 Date: 23/01/2025
@@ -97,4 +135,65 @@ keyword=function
 parameters=values (variables)which are declared inside the () paranthesis while defining a function
 
 arguments: values which are passed through the parameters
+function return: the return statement can be used to return the value to function call
 
+Anonymous function: A function with out name, after we create a function without name and we assign it to a variable
+ex: sum=function(a,b){
+    let r= a+b;
+    return r;
+}
+console.log(sum)
+
+Date:24/1/2025
+Arrow function:
+--Es6 version
+--more readable and more structure
+--Anonymous functions(lambda function)
+--without function name but they are assigned to a variable
+
+example:
+let c=()=>{
+    console.log("smily")
+}
+c();
+
+Arrow function with parameter
+ex: let a=(x,y)=>{
+    return x+y;
+}
+a(7,7);
+
+Arrow function with one parameter:
+ex:
+let greet =x=>console.log(x);
+    greet('hello');
+Arrow function with ternary operation:
+example:
+  let age=45;
+    let welcome=(age<18)?()=>console.log("hi "+age):()=>console.log("hi "+age);
+    welcome();
+ javascript can execute both synchronus and asynchronus
+ --one task after other
+ ex:
+ function task1(){
+    console.log('task1: start')
+ }
+
+ javascript callback functions:
+ a callback function is a function that is passed argument to another function
+ example:
+ function greet(name,callback){
+    console.log(`hello,${name} !`);
+    callback();
+    //this calls the callback function after greeting
+ }
+ function saygoodbye(){
+    console.log("goodbye")
+ }
+ //call greet and pass say goodbye as the callback
+ greet(sam)
+ promise:
+ -eventual completion
+ 1. pending: still not completed , continuing
+ 2.fulfilled: task completed
+ 3. rejected: the operation is failed

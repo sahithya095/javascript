@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let c=()=>{
+    //     console.log("smily")
+    // }
+    // c();
+    // let a=(x,y)=>{
+    //  //return x+y;
+    //  console.log(x+y)
+    // }
+    // a(7,7);
+    // //with one parameter
+    // let greet =x=>console.log(x);
+    // greet('hello');
+    // let age=45;
+    // let welcome=(age<18)?()=>console.log("hi "+age):()=>console.log("hi "+age);
+    // welcome();
+    // //synchronus function
+    // function task1(){
+    // console.log('task1: start')
+    // }
+    // function task2(){
+    // console.log('task2: start')
+    // }
+    // function task3(){
+    // console.log('task3: start')
+    // }
+    // function task4(){
+    // console.log('task4: start')
+    // }
+    // task1();
+    // task2();
+    // task3();
+    // task4();
+    //asynchronus function
+    console.log("hi sai ");
+    setTimeout(()=>{
+        console.log("i am waiting");
+    },3000);
+    console.log("i am in lab")
+    function greet(name,callback){
+    console.log(`hello,${name} !`);
+    // callback();
+    //this calls the callback function after greeting
+    }
+    function saygoodbye(){
+    console.log("goodbye")
+    }
+    //call greet and pass say goodbye as the callback
+    greet('sam')
+    // let mypromise=new Promise(resolve,reject)=>{
+        // let su=true;
+        // if(su){
+        //     resolve("task completed");
+        // };
+        // else{
+        //     reject("task failed")
+        // }
+    
+    
+ 
+    </script>
+</body>
+</html>

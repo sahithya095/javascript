@@ -197,3 +197,14 @@ example:
  1. pending: still not completed , continuing
  2.fulfilled: task completed
  3. rejected: the operation is failed
+
+ example:
+ Date: 25/01/2025
+ callback function:
+  A callback function is a function that is passed argument to another function
+ Execution: the function receiving the callback will execute the callback function at some point during execution
+example1:passing a callback function
+ example2: passing a named function as callback
+ example3:anonymous function as callback
+ example4:asynchronous callback function with timeout
+ example5: using callbck function with array methods

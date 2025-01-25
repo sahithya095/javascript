@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // example1:passing a callback function
+        function mainfunction(callback){
+            console.log ("executing main function");
+            callback()
+        }
+        function callbackfunction(){
+            console.log("callback function is executing");
+        }
+        mainfunction(callbackfunction);
+        //mainfunction takes a parameter callback
+        //callback function is passed as an argument to mainfunction inside the mainfunction
+
+        //output:
+        //executing main function
+        // callback function is executing
+        // example2: passing a named function as callback
+        function greet(name,callback){
+            console.log("hello",name);
+            callback()
+
+        }
+        function goodbye(){
+            console.log("good bye");
+        }
+        greet('sai',goodbye);
+        //example3:anonymous function as callback
+        greet('chithra',function(){
+            console.log("goodbye")
+        })
+        //example4:asynchronous callback function with timeout
+        // function fetchfunction(callback){
+        //     console.log("fetching data");
+        //     setTimeout(function(){
+        //         console.log("data fetched");
+        //         callback();
+        //     },2000)
+        // }
+        // function processdata(){
+        //     console.log("processing the data");
+        // }
+        // fetchfunction(processdata);
+        //example5: using callbck function with array methods
+        const num=[1,2,3,4,5];
+        const d=num.map(function(num){
+            return num*2
+        })
+        console.log(d);
+        //EX: map is a built in array method that callback function to process item in a array
+        //the callback function will double (num*2) each item in the array and return the array 
+        function register(username,email,callback){
+            console.log("registered user",username)
+            setTimeout(function(){
+                console.log("user",username,"registered sucessfully");
+                callback (email);//callback after register
+            },2000)
+            function welcomeemail(email){
+                console.log("sending email")
+            }
+            register('sai','sadagjh',welcomeemail)
+        }
+    </script>
+</body>
+</html>

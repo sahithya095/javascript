@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     let mypromise= new Promise((resolve,reject)=>{
+//     let success=false;
+//     if(success){
+//         resolve("The operation is successful");
+//     }else{
+//         reject("The operation is failed");
+//     }
+// });
+// mypromise.then(result=>{
+//     console.log(result);
+// }).catch(error=>{
+//     console.log(error);
+// });
+// chaining promise
+let promise=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+    resolve(5);
+    },1000)
+    //intial value is 5
+})
+promise.then(result=>{
+    console.log(result);
+    return result*2
+    })
+    .then(result=>{
+    console.log(result);
+    return result+3
+    })
+    .then(result=>{
+    console.log(result);
+}).catch(error=>{
+    console.log(error);
+});
+//settimeout promise:
+let mypromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let success = false;
+        if (success) {
+            resolve("The operation is successful");
+        } else {
+            reject("The operation failed");
+        }
+    }, 1000); 
+});
+
+mypromise.then(result => {
+    console.log(result);
+}).catch(error => {
+    console.log(error);
+});
+let fetchData=new Promise((resolve,reject)=>{
+        let dataFetched=true
+        setTimeout(()=>{
+            if(dataFetched=true){
+                resolve("Data fetched successfully.")
+            }else{
+                reject("Data fetched failed.")
+            }    
+        },1000)
+    })
+    fetchData.then(result=>{
+        console.log(result)
+    }).catch(error=>{
+        console.log("Error",error)
+    })
+
+    </script>
+    
+</body>
+</html>

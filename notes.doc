@@ -230,11 +230,63 @@ reject: to mark it as failed
 then(): method is called when the promise is fulfilled.
 It receives the result from the resolve()
 catch(): method is called if promise is rejected it receives the error message from reject().
-
-example:
-Let mypromise= new promise((resolve,reject))=>{
-    let success=true;
+eg:    let mypromise= new Promise((resolve,reject)=>{
+    let success=false;
     if(success){
-        resolve()
+        resolve("The operation is successful");
+    }else{
+        reject("The operation is failed");
     }
-}
+});
+mypromise.then(result=>{
+    console.log(result);
+}).catch(error=>{
+    console.log(error);
+});
+
+^^chaining promises:^^
+Example:
+let promise=new Promise((resolve,reject)=>{
+    resolve(5);
+    //intial value is 5
+})
+promise.then(result=>{
+    console.log(result);
+    return result*2
+    })
+    .then(result=>{
+    console.log(result);
+    return result+3
+    })
+    .then(result=>{
+    console.log(result);
+}).catch(error=>{
+    console.log(error);
+});
+
+eg: promise with the settimeout
+--asynchronous task using set timeout , and the promise will resolve after a certain amount of time.
+
+Date:28/01/2025
+
+DOM (document object model)
+it is used in web development used to interact and manipulate(change) the html documents
+when the webpage loaded, the browser create DOM of the webpage
+when the html file is loaded into the browser
+the javascript cannot understand the html document directly
+
+DOM:It is basically the representation of the same  html document but in a tree-like structure composed of object
+KEYPOINTS:
+1.structure: The DOM represents the structure of html document as a tree. Ecah node in tree represents the elements an attributeor text
+2.manipulation: using javascript ,you can interact with elements (buttons,paragraphs) on the webpage, changing the content, styles,can add or remove elements
+3.Event handling: you can handle the interactions,like click or pressing the buttons
+4.W3C:world wide web construction:accounting to W3C we need to build the webpage.
+
+Methods of document object:
+Used to interact with and manipulate the document
+Getting Element:
+1.getting an element by id
+2.getting an element by class
+3.getting an element by tag
+4.getting an element by query selector
+#id and class:

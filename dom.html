@@ -15,16 +15,35 @@
         </style>
 </head>
 <body>
+    <h1 id="a">sai</h1>
+    <h1 id="a">sam</h1>
     
     <h1 class="a">smily</h1>
     <h1 class="b">shiny</h1>
     <h1 class="b">sam</h1>
-    <h1 class="c">sai</h1>
+    <h1 class="a">sai</h1>
     <h1 class="a">chithra</h1>
     <h1 class="c">sunny</h1>
     <script>
-        let x=document.getElementsByID("a")
-        console.log()
+        let g=document.getElementById("a");
+        console.log(g);
+        let x=document.getElementsByClassName("b");
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]);
+        }
+        console.log(x);
+        let y=document.getElementsByTagName("h1");
+        for(let i=0;i<y.length;i++){
+            console.log(y[i]);
+
+        }
+        let u=document.querySelectorAll("h1");
+        console.log(u);
+        let t=document.createElement("h2");
+        t.className("tt");
+        t.textContent("hi sam");
+        console.log(t);
+        document.body.appendChild(t);
     </script>
 
 

@@ -2,12 +2,12 @@ TRAINING
 
 6/1/2025
 variables:variables are used to store data(any type of data)
-1) static typed and dynamic typed
+1. static typed and dynamic typed
 
 case sensitive:
-1) start with letters , underscore,$
-2) can't start with numbers
-3) reserved words can't be used
+1.start with letters , underscore,$
+2.can't start with numbers
+3.reserved words can't be used
 
 how to declare variables:
 1.variable(var)
@@ -290,3 +290,9 @@ Getting Element:
 3.getting an element by tag
 4.getting an element by query selector
 #id and class:
+
+Date:29/01/2025
+GetElementsByID: returns the elements which have the id name (only single element)
+GetElementsByClassName: returns the elements which have the class name(in collection form)
+GetElementsByTagNmae: returns the elements by the tag(in collection form)
+Query selector: returns the elements by the name we given like h1(in node list)

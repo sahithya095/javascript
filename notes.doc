@@ -83,7 +83,7 @@ Syntax: for(initialization; condition ; update—expression){
 }
 
 
-Date: 21/01/25
+Date: 21/01/25()
 For in loop
 Const a = ‘ramya’
 For(let I in a){
@@ -110,7 +110,7 @@ The inner loop will execute one time for each iteration of outer loop
 An inner loop within the repeating block of outer loop
 
 
-Date: 23/01/2025
+Date: 23/01/2025(function)
 1, conditioal statements
 2, loops
 3,nested loops
@@ -144,7 +144,7 @@ ex: sum=function(a,b){
 }
 console.log(sum)
 
-Date:24/1/2025
+Date:24/1/2025(function1)
 Arrow function:
 --Es6 version
 --more readable and more structure
@@ -199,7 +199,7 @@ example:
  3. rejected: the operation is failed
 
  example:
- Date: 25/01/2025
+ Date: 25/01/2025(callback)
  callback function:
   A callback function is a function that is passed argument to another function
  Execution: the function receiving the callback will execute the callback function at some point during execution
@@ -212,7 +212,7 @@ example1:passing a callback function
  EX: map is a built in array method that callback function to process item in a array
 the callback function will double (num*2) each item in the array and return the array \
 
-Date: 27/01/2025
+Date: 27/01/2025(promise)
 promise:It is special javascript object that represents the eventual completion(or failure) of an asynchronous operation
 it allows to handle asynchronous tasks more efficiently than callbacks
 
@@ -267,7 +267,7 @@ promise.then(result=>{
 eg: promise with the settimeout
 --asynchronous task using set timeout , and the promise will resolve after a certain amount of time.
 
-Date:28/01/2025
+Date:28/01/2025(promise)
 
 DOM (document object model)
 it is used in web development used to interact and manipulate(change) the html documents
@@ -291,8 +291,30 @@ Getting Element:
 4.getting an element by query selector
 #id and class:
 
-Date:29/01/2025
+Date:29/01/2025(dom)
 GetElementsByID: returns the elements which have the id name (only single element)
 GetElementsByClassName: returns the elements which have the class name(in collection form)
 GetElementsByTagNmae: returns the elements by the tag(in collection form)
 Query selector: returns the elements by the name we given like h1(in node list)
+
+Manipulating the elements:
+to create HTML Elements:
+createElement()- create a new element by method
+single element:
+example:let t=document.createElement("h2");
+        t.className("tt");
+        t.textContent("hi sam");
+        console.log(t);
+        document.body.appendChild(t);
+multipe elements:
+ const s=['sam','sai','ads']
+        for(let i=0;i<s.length;i++){
+            let tt=document.createElement("h1");
+            tt.className='a';
+            tt.textContent=s[i];
+            console.log(tt)}
+
+Date:30/1/2025(elements)
+Removing a child element from a parent node.
+appendChild method
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Removing Child Node</h1>
+    <h2>I am shine</h2>
+    <ul>
+        <li>sam</li>
+        <li>sai</li>
+        <li>adam</li>
+    </ul>
+    <div id="a">
+        <h1>sai</h1>
+        <h1>sam</h1>
+    </div> 
+    <div id="b">
+        <h1>smile</h1>
+        <h1>shine</h1>
+    </div>
+
+    <script>
+        // const a=document.querySelector('ul')
+        // const lists=document.querySelectorAll("li")
+        // for(const list of lists){
+        //     console.log("Removing: "+list.textContent);
+        //     a.removeChild(list)
+            
+        // }
+        let n=document.createElement("h2");
+        n.textContent="sai is leader";
+        let p=document.getElementById("b")
+        p.appendChild(n)
+        console.log(p)
+        console.log(p.innerText)
+
+    </script>
+</body>
+</html>
